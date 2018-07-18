@@ -54,5 +54,20 @@
     <input type="text" style="background-color: {{ myCol }}" ng-model="myCol">
   </div> -->
 
+  <!-- Create our own directives -->
+  <div ng-app="myApp" misa-test-directive>
+
+  </div>
+
+  <script>
+    var app = angular.module("myApp", []);
+
+    app.directive("misaTestDirective", function() {
+      return {
+        template: 'I was made in a directive constructor!'
+      };
+    });
+  </script>
+
 </body>
 </html>
