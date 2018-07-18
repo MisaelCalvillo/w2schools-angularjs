@@ -55,7 +55,7 @@
   </div> -->
 
   <!-- Create our own directives -->
-  <div ng-app="myApp" misa-test-directive>
+  <!-- <div ng-app="myApp" misa-test-directive>
 
   </div>
 
@@ -67,7 +67,14 @@
         template: 'I was made in a directive constructor!'
       };
     });
-  </script>
+  </script> -->
+
+  <!-- Use of 'ng-repeat' directive -->
+  <div ng-app="" ng-init="nombres=['Jani', 'Misa', 'Baza', 'Angelo']">
+    <ul>
+      <li ng-repeat="nombre in nombres">{{ nombre }}</li>
+    </ul>
+  </div>
 
 </body>
 </html>
